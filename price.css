@@ -1,0 +1,138 @@
+    
+body, h1, h2, h3, h4, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.main_pricing{
+    display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 60px;
+}
+.Pricing_1 {
+    background-color: #fff;
+            padding: 20px;
+            max-width: 200px;
+            text-align: center;
+}
+
+.title{
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub_title{
+    font-size: 30px;
+    text-align: center  ;
+}
+
+.main_title{
+    margin-bottom: 80px;
+}
+
+
+/* Style the Terms & Conditions */
+h4 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.P_title{
+    font-size: 20px;
+    text-align: center  ;
+}
+
+.sign_up{
+    margin: 50px 20px 50px 20px
+    
+}
+
+.signup_button{
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #007bff;
+    width: 120px;
+    height: 60px;
+    margin: 0 auto; 
+    display: block;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.tnc {
+    
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.tnc h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tnc ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.tnc ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tnc p {
+    font-size: 18px;
+}
+
+.loginhere{
+    width: 50%;
+    margin: auto;
+
+}

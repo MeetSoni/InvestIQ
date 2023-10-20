@@ -1,0 +1,176 @@
+body, html {
+    width: 100%;
+}
+  
+/* Apply some basic styles to the entire page */
+body {
+    /* background-color: gainsboro; */
+}
+
+/* Css design for abt_top containor */
+.aboutt_container {
+    display: flex;
+    width: 100%;
+    background-color: gainsboro;
+}
+.abt_top{
+    display: block;
+    text-align:justify;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    width:97%;
+    padding: 1% 1% 1% 1%;
+}
+
+.abt_top h2{
+    text-align:center;
+    display:block;
+    padding: auto;
+    color:white;
+    font-size:xx-large;
+}
+.abt_top p{
+    text-align:justify;
+    padding-left: 30%;
+    padding-right: 30%;
+    color:white;
+    font-size: large;
+}
+/* css design for abt_team */
+
+.abt_team {
+    display:block;
+    width: 100%;
+    background-color: gainsboro;
+    align-items: center;
+    text-align: center;   
+}
+
+.abt_team h2{
+    font-size:xx-large;
+
+}
+.abt_team_data{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+.abt_team .abt_t1,.abt_t2,.abt_t3,.abt_t4,.abt_t5{
+    padding-right: 2%;
+    padding-top: 2%;
+    align-content: center; 
+}
+.abt_team .abt_t1 img,.abt_t2 img,.abt_t3 img,.abt_t4 img,.abt_t5 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* This property creates a circular shape */
+}
+/* css for device with max-width = 768px */
+@media (max-width: 768px) {
+    .about_container{
+        width: 100%;
+        display: block;
+    }
+
+    .abt_top{
+        display: block;
+        text-align:justify;
+        align-items: center;
+        background-color: green;
+        border-radius: 10px;
+        width:97%;
+        padding: 1% 1% 1% 1%;
+    }
+    .abt_top h2{
+        text-align:center;
+        display:block;
+        padding: auto;
+        color:white;
+        font-weight: bolder;
+        font-size: larger;
+
+    }
+    .abt_top p{
+        text-align:justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .abt_team {
+        display:block;
+        width: 97%;
+
+        background-color: gainsboro;
+        /* align-items: center; */
+        text-align: center;
+        
+    
+    }
+    .abt_team_data{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%; 
+        margin-left: 10%;
+        margin-right: 10%;
+    
+    }
+    .abt_team .abt_t1,.abt_t2,.abt_t3,.abt_t4,.abt_t5{
+        width: 100%;
+        align-content: center;
+        /* display: flexbox; */
+    }
+
+    .abt_team .abt_t1 p,.abt_t2 p,.abt_t3 p,.abt_t4 p,.abt_t5 p{
+        font-weight: lighter;
+        align-content: center; 
+    }
+    .abt_team .abt_t1 img,.abt_t2 img,.abt_t3 img,.abt_t4 img,.abt_t5 img{
+        width:90px;
+        height:90px;
+        border-radius: 50%; /* This property creates a circular shape */
+    }
+
+}
+
+  /* css for device with max-width = 320px */
+@media only screen and (max-width: 320px) {
+    body{
+        width: 100%;
+    }
+    .about_container{
+        width: 100%;
+        display: block;
+    }
+    .abt_top{
+        display: block;
+        text-align:justify;
+        align-items: center;
+        background-color: green;
+        border-radius: 15px;
+        width:100%;
+    }
+    .abt_top h2{
+        text-align:center;
+        display:block;
+        padding: auto;
+        color:white;
+        font-weight: bolder;
+
+    }
+    .abt_top p{
+        text-align:justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .abt_team_data{
+        display: inline-block;
+        align-content:baseline;
+    
+    }
+}

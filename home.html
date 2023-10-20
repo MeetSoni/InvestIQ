@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stock Rates</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="header.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   
+</head>
+<body>
+    <div class="main_nav">
+        <div class="logo-box">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="news.html">News</a>
+            <a href="contacts.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="#trading">Trading</a>
+            <a href="#watchlist">Watchlist</a>
+            <a href="price.html">Pricing</a>
+            <a href="MutualFunds.html">MutualFunds</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </div>
+    <div class="container">
+        <h1>Live Stock Rates</h1>
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Stock Symbol</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                </tr>
+            </thead>
+            <tbody id="stock-data">
+                <!-- Stock data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Simulated stock data (replace with real data source)
+        const stocks = [
+            { symbol: "AAPL", price: 150.25, change: 1.15 },
+            { symbol: "GOOGL", price: 2725.50, change: -4.75 },
+            { symbol: "MSFT", price: 290.75, change: 0.50 },
+        ];
+
+        // Function to update stock data in the table
+        function updateStockData() {
+            const stockTableBody = document.getElementById("stock-data");
+            stockTableBody.innerHTML = "";
+
+            stocks.forEach((stock) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${stock.symbol}</td>
+                    <td>$${stock.price.toFixed(2)}</td>
+                    <td>${stock.change.toFixed(2)}</td>
+                    <td><button>Buy</button></td>
+                    <td><button>Sell</button></td>
+
+
+
+                `;
+                stockTableBody.appendChild(row);
+            });
+        }
+
+        // Simulate data updates every 5 seconds (replace with real-time data source)
+        setInterval(() => {
+            stocks.forEach((stock) => {
+                // Simulate price change
+                stock.price += Math.random() * 5 - 2.5;
+                // Simulate change
+                stock.change = Math.random() * 10 - 5;
+            });
+            updateStockData();
+        }, 5000); // Update every 5 seconds
+
+        // Initial data population
+        updateStockData();
+    </script>
+
+<div class="footer-box">
+    <div class="footer-socialmedia-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="footer-info">
+        <p>&#169; Copywrite 2023 investIQ</p>
+    </div>
+</div>
+</body>
+</html>
